@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo 1</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Book Store Form</h1>
+        <form>
+            <fieldset>
+                <legend>Parent Information</legend>
+                <label for="firstName" >First Name: </label>
+                <input type="text" name="firstName" id="firstName" pattern="[A-Za-z]{2, 63}" placeholder="First Name"/>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName"pattern="[A-Za-z]{2, 63}"  placeholder="Last Name" />
+                <label for="email">Email Address: </label>
+                <input type="email" name="email" id="email" pattern="[a-zA-Z0-9.+-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}" placeholder="email Address" />
+                <label for="telephone">Phone Number: </label>
+                <input type="tel" name="telephone" id="telephone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}" maxlength="15" minlength="10" />
+                <label for="telephone">Today's Date: </label>
+                <input type="date" name="today" id="today" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Child's Information</legend>
+                <label for="firstName" >First Name: </label>
+                <input type="text" name="firstName" id="firstName" pattern="[A-Za-z]{2, 63}" placeholder="First Name"/>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName"pattern="[A-Za-z]{2, 63}"  placeholder="Last Name" />
+                <label for="telephone">birthday: </label>
+                <input type="date" name="birthday" id="birthday" />
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferred book(s)</legend>
+            <select name="rooms" id="rooms" multiple>
+                <option value="The Cat in the Hat">The Cat in the Hat</option>
+                <option value="Hop on Pop">Hop on Pop</option>
+                <option value="Harry Potter and the Sorcerer's Stone" selected>Harry Potter and the Sorcerer's Stone</option>
+                <option value="Charlotte's Web">Charlotte's Web</option>
+                <option value="Goodnight Moon">Goodnight Moon</option>
+            </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>parent's approval signed </legend>
+                <label for="multiM">yes</label>
+                <input type="checkbox" name="multiMeeting" class="multiMeeting" id="multiM" value="yes" />
+                <label for="multiT">no</label>
+                <input type="checkbox" name="multiMeeting" class="multiMeeting" id="multiT" value="no" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments</legend>
+                <textarea name="comment" id="comment">Add your content here.</textarea>
+            </fieldset>
+
+            <button name="submit" id="submit">submit</button>
+            <button name="clear" id="clear">clear</button>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
